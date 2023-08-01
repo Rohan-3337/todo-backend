@@ -3,7 +3,7 @@ const express = require('express')
 const dotenv = require('dotenv')
 const cors = require("cors")
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5000
 connect_To_mongo()
 dotenv.config()
 app.use(express.json())
